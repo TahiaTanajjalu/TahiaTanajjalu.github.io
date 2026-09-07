@@ -1,10 +1,298 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Portfolio</title>
-  </head>
-  <body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
-    <h1>Hello, World!</h1>
-    <p>Welcome to my personal site hosted on GitHub Pages.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tahia Tanajjalu Fateha | ECE Researcher</title>
+  <style>
+    :root {
+      --bg-color: #0b0f19;
+      --card-bg: #111827;
+      --card-hover: #1f2937;
+      --accent: #38bdf8;
+      --accent-glow: rgba(56, 189, 248, 0.15);
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border: #1f2937;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .contact-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.2s ease;
+    }
+
+    .contact-links a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 1.2rem;
+      background-color: var(--accent);
+      border-radius: 2px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 20px var(--accent-glow);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .title {
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 1.1rem;
+    }
+
+    .meta {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    .institution {
+      color: var(--accent);
+      font-size: 0.95rem;
+      margin-bottom: 0.75rem;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-muted);
+    }
+
+    ul li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .tag {
+      background: rgba(56, 189, 248, 0.1);
+      color: var(--accent);
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Tahia Tanajjalu Fateha</h1>
+      <p class="subtitle">Electrical and Computer Engineering Researcher | Smart Grids & Applied AI</p>
+      <p style="color: var(--text-muted);">
+        Specializing in machine learning applications for smart grids, data-driven optimization, explainable AI (XAI), and energy management systems (EMS)[cite: 1].
+      </p>
+      <div class="contact-links">
+        <a href="mailto:tahiatanajjalu@gmail.com">✉ tahiatanajjalu@gmail.com</a>
+        <a href="https://linkedin.com/in/tahia-tanajjalu-fateha" target="_blank">🔗 LinkedIn</a>
+        <span>📍 Dhaka, Bangladesh</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Research Experience</h2>
+      
+      <div class="card">
+        <div class="card-header">
+          <span class="title">Research Assistant</span>
+          <span class="meta">Jan 2026 – Present</span>
+        </div>
+        <p class="institution">Independent University, Bangladesh (IUB)</p>
+        <ul>
+          <li>Conducting research under the supervision of Dr. Md Kafiul Islam and academic oversight of Dr. Md Abdur Razzak[cite: 1].</li>
+          <li>Modeling volatile real-world electric vehicle (EV) charging station datasets to forecast multi-phase Voltage Total Harmonic Distortion (VTHD) and power factor anomalies[cite: 1].</li>
+          <li>Formulating algorithms to classify distribution network stress and mitigate harmonic injection risks[cite: 1].</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="title">Industrial Attachment Engineering Intern</span>
+          <span class="meta">2024</span>
+        </div>
+        <p class="institution">Square Informatz Ltd.</p>
+        <ul>
+          <li>Developed a web-based inventory management platform featuring secure user authentication and database integrations[cite: 1].</li>
+          <li>Designed advanced filtering pipelines and invoicing order summary modules[cite: 1].</li>
+          <li>Gained field exposure to cloud computing architectures, networking systems, and enterprise server management[cite: 1].</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Publications & Research Manuscripts</h2>
+      
+      <div class="card">
+        <div class="title">AI-Driven Per-Phase Power Factor and Harmonic Distortion Forecasting with Risk Classification for Modern Distribution Grids with High EV Penetration</div>
+        <p class="meta" style="margin-top: 0.25rem;">Primary Author • Submitted & Under Review (2026)[cite: 1]</p>
+      </div>
+
+      <div class="card">
+        <div class="title">Domain-Informed Feature Engineering and Explainable Machine Learning for Transformer Health Index Prediction</div>
+        <p class="meta" style="margin-top: 0.25rem;">Primary Author • Submitted & Under Review (2026)[cite: 1]</p>
+      </div>
+
+      <div class="card">
+        <div class="title">A Comprehensive Review on Load Forecasting, Demand-Side Management, and Optimal Scheduling Frameworks under Volatile Field Data Volatility and Power Factor Degradation</div>
+        <p class="meta" style="margin-top: 0.25rem;">Primary Author • Manuscript In Progress[cite: 1]</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education & Thesis</h2>
+      
+      <div class="card">
+        <div class="card-header">
+          <span class="title">B.Sc. in Electrical and Computer Engineering</span>
+          <span class="meta">Jan 2020 – June 2025</span>
+        </div>
+        <p class="institution">Rajshahi University of Engineering & Technology (RUET)</p>
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0.5rem;">Academic Standing: CGPA 3.09 / 4.00[cite: 1]</p>
+        <p style="color: var(--text-muted); font-size: 0.95rem;"><strong>Undergraduate Thesis:</strong> Domain-Informed Feature Engineering and Explainable Machine Learning for Transformer Health Index Prediction[cite: 1]. Integrated SHAP analysis with tree-based ensemble frameworks (XGBoost, Random Forest)[cite: 1].</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills & Examinations</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="title" style="margin-bottom: 0.75rem;">Technical Expertise</div>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">C/C++</span>
+            <span class="tag">HTML/CSS</span>
+            <span class="tag">MATLAB</span>
+            <span class="tag">Simulink</span>
+            <span class="tag">Pandas / NumPy</span>
+            <span class="tag">SHAP Analysis</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">LaTeX</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="title" style="margin-bottom: 0.5rem;">IELTS Academic</div>
+          <p class="institution" style="margin-bottom: 0.5rem;">Overall Band Score: 7.5 (July 2026)[cite: 1]</p>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Listening: 8.0 | Reading: 7.5 | Writing: 7.0 | Speaking: 7.0[cite: 1]
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Tahia Tanajjalu Fateha</p>
+    </footer>
+  </div>
+
+</body>
 </html>
