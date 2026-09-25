@@ -315,23 +315,41 @@
 
     <!-- Publications Section -->
     <section id="publications">
-      <h2>Publications & Manuscripts</h2>
-      
-      <div class="card">
-        <div class="pub-title">AI-Driven Per-Phase Power Factor and Harmonic Distortion Forecasting with Risk Classification for Modern Distribution Grids with High EV Penetration</div>
-        <div class="pub-meta">Primary Author • Submitted & Under Review (2026)</div>
-      </div>
+  <h2>Publications &amp; Manuscripts</h2>
 
-      <div class="card">
-        <div class="pub-title">Domain-Informed and Explainable Machine Learning for Transformer Health Index Prediction: A Comparative Study of Two Diagnostic Datasets</div>
-        <div class="pub-meta">Primary Author • Submitted & Under Review (2026)</div>
-      </div>
+  <div class="card">
+    <div class="pub-title">AI-Driven Per-Phase Power Factor and Harmonic Distortion Forecasting with Risk Classification for Modern Distribution Grids with High EV Penetration</div>
+    <div class="pub-meta">Primary Author &bull; Submitted &amp; Under Review (2026)</div>
+    <div class="pub-details">
+      <p><strong>Summary:</strong> Developed a causal, segment-aware machine learning framework using Random Forest and XGBoost to forecast per-phase power factor (PF) and voltage total harmonic distortion (VTHD) 10 minutes ahead[cite: 2].</p>
+      <ul>
+        <li><strong>Dataset:</strong> High-resolution real-world power quality data (10-second intervals via Fluke 435 Series II) from a high-density e-rickshaw EV charging facility in Bangladesh[cite: 2].</li>
+        <li><strong>Performance:</strong> Random Forest achieved top performance for PF across all phases (\(R^2\) up to 0.7195)[cite: 2]. XGBoost led Phase A VTHD forecasting (\(R^2 = 0.7950\)), while Random Forest outperformed on Phases B and C[cite: 2].</li>
+        <li><strong>Key Contribution:</strong> Integrated an IEEE-aligned, rule-based operational risk classification mechanism (Good/Acceptable/Poor) to enable proactive grid control, such as automated harmonic filter switching or EV charging delays[cite: 2].</li>
+      </ul>
+    </div>
+  </div>
 
-      <div class="card">
-        <div class="pub-title">A Comprehensive Review on Load Forecasting, Demand-Side Management, and Optimal Scheduling Frameworks under Volatile Field Data Volatility and Power Factor Degradation</div>
-        <div class="pub-meta">Primary Author • Manuscript In Progress</div>
-      </div>
-    </section>
+  <div class="card">
+    <div class="pub-title">Domain-Informed and Explainable Machine Learning for Transformer Health Index Prediction: A Comparative Study of Two Diagnostic Datasets</div>
+    <div class="pub-meta">Primary Author &bull; Submitted &amp; Under Review (2026)</div>
+    <div class="pub-details">
+      <p><strong>Summary:</strong> Developed a domain-informed, explainable machine learning framework for predicting power transformer Health Index (HI), benchmarked across two distinct public diagnostic datasets (Dataset A: N=730; Dataset B: N=470)[cite: 1].</p>
+      <ul>
+        <li><strong>Feature Engineering:</strong> Formulated physical degradation metrics, including composite Oil Quality Indices (OQI), non-linear interaction terms (e.g., Acid &times; Water), physical ratios, and furan-based degree of polymerization estimates[cite: 1].</li>
+        <li><strong>Performance:</strong> Tree-based ensembles outperformed linear baselines, with Gradient Boosting achieving \(R^2 = 0.9697\) on Dataset A and \(R^2 = 0.7301\) on Dataset B[cite: 1].</li>
+        <li><strong>Explainability (SHAP):</strong> Revealed dataset structural differences&mdash;Dataset A was dominated by furan concentrations (cellulose aging)[cite: 1], whereas Dataset B relied on corrosive sulfur (DBDS), dissolved gases, and engineered interaction terms[cite: 1].</li>
+        <li><strong>Key Contribution:</strong> Highlighted the risk of predictor-target circularity in ML models when reconstructing legacy scoring formulas versus learning true physical degradation[cite: 1].</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="pub-title">A Comprehensive Review on Load Forecasting, Demand-Side Management, and Optimal Scheduling Frameworks under Volatile Field Data Volatility and Power Factor Degradation</div>
+    <div class="pub-meta">Primary Author &bull; Manuscript In Progress</div>
+  </div>
+
+</section>
 
     <!-- Experience Section -->
     <section id="experience">
