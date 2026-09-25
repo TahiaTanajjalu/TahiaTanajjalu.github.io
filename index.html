@@ -92,7 +92,7 @@
       flex: 1;
     }
 
-    /* Highly Highlighted Name Styling */
+    /* Name Styling */
     .hero-name {
       font-size: 3.2rem;
       font-weight: 900;
@@ -138,6 +138,16 @@
       color: #e5e5e5;
       font-size: 1rem;
       line-height: 1.6;
+    }
+
+    .objective-box ul {
+      margin-left: 1.2rem;
+      color: #e5e5e5;
+      font-size: 0.95rem;
+    }
+
+    .objective-box li {
+      margin-bottom: 0.4rem;
     }
 
     /* Picture Frame Styling */
@@ -274,16 +284,16 @@
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#publications">Publications</a></li>
-      <li><a href="#contact">Contact Me</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills & Courses</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <div class="container">
     
-    <!-- Hero Section (Opening Page View) -->
+    <!-- Hero Section -->
     <div class="hero" id="home">
-      
-      <!-- Name & Objective on the Left -->
       <div class="hero-text">
         <h1 class="hero-name">Tahia Tanajjalu <span class="highlight">Fateha</span></h1>
         <div class="hero-title">ECE Researcher | Smart Grids & Applied AI</div>
@@ -291,85 +301,95 @@
         <div class="objective-box">
           <h3>Objective</h3>
           <p>
-            Electrical and Computer Engineering researcher specializing in power and energy system machine learning applications for smart grids. Research focuses on utilizing data-driven methods, optimization frameworks, and explainable AI (XAI) to resolve critical challenges in grid sustainability, load scheduling, and severe asset data scarcity through the analysis of volatile real-world power quality datasets[cite: 1].
+            Electrical and Computer Engineering researcher specializing in power and energy system machine learning applications for smart grids. Research focuses on utilizing data-driven methods, optimization frameworks, and explainable AI (XAI) to resolve critical challenges in grid sustainability, load scheduling, and severe asset data scarcity through the analysis of volatile real-world power quality datasets.
           </p>
         </div>
       </div>
 
-      <!-- Picture Frame on the Right -->
+      <!-- Profile Photo Container -->
       <div class="hero-image-container">
-        <!-- Replace 'profile.jpg' with the actual filename of your photo inside your GitHub repository 
-        <img src="profile.jpg" alt="Tahia Tanajjalu Fateha" class="profile-photo">-->
-        <img class="profile-photo" src="https://github.com/TahiaTanajjalu/TahiaTanajjalu.github.io/blob/7f6250f730363825c966cb1391cd1d31c9722c5c/WhatsApp%20Image%202026-09-14%20at%2012.09.35%20AM.jpeg" alt="Profile photo">
+        <!-- Direct GitHub raw user content URL fixes image rendering issues -->
+        <img class="profile-photo" src="https://raw.githubusercontent.com/TahiaTanajjalu/TahiaTanajjalu.github.io/7f6250f730363825c966cb1391cd1d31c9722c5c/WhatsApp%20Image%202026-09-14%20at%2012.09.35%20AM.jpeg" alt="Tahia Tanajjalu Fateha">
       </div>
-
     </div>
 
-    <!-- Publications Page Section -->
-    <section id="Publications Under Review">
+    <!-- Publications Section -->
+    <section id="publications">
       <h2>Publications & Manuscripts</h2>
       
       <div class="card">
         <div class="pub-title">AI-Driven Per-Phase Power Factor and Harmonic Distortion Forecasting with Risk Classification for Modern Distribution Grids with High EV Penetration</div>
-        <div class="pub-meta">Primary Author • Submitted & Under Review (2026)[cite: 1]</div>
+        <div class="pub-meta">Primary Author • Submitted & Under Review (2026)</div>
       </div>
 
       <div class="card">
         <div class="pub-title">Domain-Informed Feature Engineering and Explainable Machine Learning for Transformer Health Index Prediction</div>
-        <div class="pub-meta">Primary Author • Submitted & Under Review (2026)[cite: 1]</div>
+        <div class="pub-meta">Primary Author • Submitted & Under Review (2026)</div>
       </div>
 
       <div class="card">
         <div class="pub-title">A Comprehensive Review on Load Forecasting, Demand-Side Management, and Optimal Scheduling Frameworks under Volatile Field Data Volatility and Power Factor Degradation</div>
-        <div class="pub-meta">Primary Author • Manuscript In Progress[cite: 1]</div>
+        <div class="pub-meta">Primary Author • Manuscript In Progress</div>
       </div>
     </section>
 
-    <!-- Contact Me Page Section -->
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Experience</h2>
+      
+      <!-- Research Assistant Experience -->
+      <div class="objective-box">
+        <h3>Research Assistant</h3>
+        <p style="color: var(--accent-red); font-weight: 600;">Independent University, Bangladesh</p>
+        <p>Under the supervision of Prof. Dr. Abdur Razzak</p>
+      </div>
+
+      <!-- Teaching & Academic Experience -->
+      <div class="objective-box" style="margin-top: 1.5rem;">
+        <h3>Academic & Teaching Experience</h3>
+        <p style="margin-bottom: 0.5rem;">
+          Throughout my undergraduate study, I gained substantial teaching experience delivering subject-matter instruction and mentoring students across science and language domains:
+        </p>
+        <ul>
+          <li><strong>Science Tutor (Physics, Chemistry & Mathematics):</strong> Tutored intermediate science students on fundamental subjects including Physics, Chemistry, and Mathematics. Delivered structured lessons on core principles, guided problem-solving methods, conducted test assessments, provided individualized feedback, and monitored overall progress.</li>
+          <li><strong>English Instructor:</strong> Instructed large classes at a reputed coaching center, leading comprehensive lectures on English grammar, academic writing, and comprehension strategies to ensure high performance in competitive academic environments.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills and Courses Section -->
+    <section id="skills">
+      <h2>Skills & Courses</h2>
+      <div class="objective-box">
+        <h3>Relevant Courses</h3>
+        <p>Undergraduate coursework covering Power Systems, Machine Learning, Data Structures, and Control Systems.</p>
+      </div>
+      <div class="objective-box">
+        <h3>Power Systems & AI Technical Skills</h3>
+        <p>Data-driven grid optimization, Explainable AI (XAI), Power Quality Data Analysis, Transformer Diagnostics, and Load Forecasting.</p>
+      </div>
+    </section>
+
+    <!-- Contact Me Section -->
     <section id="contact">
       <h2>Contact Me</h2>
       <div class="contact-grid">
         <div class="contact-card">
           <h3 style="margin-bottom: 0.5rem; color: #fff;">Email</h3>
-          <a href="mailto:tahiatanajjalu@gmail.com">tahiatanajjalu@gmail.com[cite: 1]</a>
+          <a href="mailto:tahiatanajjalu@gmail.com">tahiatanajjalu@gmail.com</a>
         </div>
         <div class="contact-card">
           <h3 style="margin-bottom: 0.5rem; color: #fff;">LinkedIn</h3>
-          <a href="https://linkedin.com/in/tahia-tanajjalu-fateha" target="_blank">in/tahia-tanajjalu-fateha[cite: 1]</a>
+          <a href="https://linkedin.com/in/tahia-tanajjalu-fateha" target="_blank">in/tahia-tanajjalu-fateha</a>
         </div>
         <div class="contact-card">
           <h3 style="margin-bottom: 0.5rem; color: #fff;">Location</h3>
-          <p style="color: var(--text-muted);">Dhaka, Bangladesh[cite: 1]</p>
+          <p style="color: var(--text-muted);">Dhaka, Bangladesh</p>
         </div>
       </div>
-       </div>
     </section>
-<!--Experience--->
-        <section id="Experience">
-      <h2>Research Assistant</h2>
-      <div class="objective-box">
-          <h3>Independent University, Bangladesh</h3>
-          <p>
-          Under the supervision of Prof. Dr. Abdur Razzak
-          </p>
-        </div>
-    </section>
- <!--Skills and COurses-->
-     <section id="Skills">
-      <h2>Skills & Courses</h2>
-             <div class="objective-box">
-          <h3>Relevant Courses</h3>
-          <p>
-          Under the supervision of Prof. Dr. Abdur Razzak
-          </p>
-        </div>
-      <div class="objective-box">
-          <h3>Power SYstem</h3>
-          <p>
-          Under the supervision of Prof. Dr. Abdur Razzak
-          </p>
-        </div>
-    </section>
+
+  </div>
 
   <footer>
     <p>© 2026 Tahia Tanajjalu Fateha</p>
